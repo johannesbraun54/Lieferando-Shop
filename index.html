@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieferando</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="basket.js"></script>
+    <script src="pay.js"></script>
+    <script src="render.js"></script>
+    <script src="responsiveBasket.js"></script>
+    <script src="responsiveBasketHtml.js"></script>
+    <script src="emptyBasket.js"></script>
+    
+</head>
+<body onload="render()">
+    <header>
+        <img class="logo" src="img/lieferando logo.png" alt="logo">
+        <p>Speisekarte</p>
+        <div class="icon">
+        <!--only icons-->
+            <img src="img/germanyicon.png" alt="icon">
+            <img src="img/hamburgermenuicon.jpeg" alt="icon">
+        </div>
+    </header>
+    <div class="body-area">
+        <!--atf-section-->
+        <div class="atf">
+            <div class="white">
+                <img id="atfimg" class="atfimg" src="img/ato.jpeg" alt="pizza">
+                <h1>Fattoria Pizzaria</h1>
+            
+                <div class="evaluation-bar">
+                    <img src="img/staricon.png" alt="staricon">
+                    <img src="img/staricon.png" alt="staricon">
+                    <img src="img/staricon.png" alt="staricon">
+                    <img src="img/staricon.png" alt="staricon">
+                    <img src="img/staricon.png" alt="staricon">
+                    178 Bewertungen</p>
+                </div>
+            </div>  
+            <div class="info-bar">
+                <img src="img/clockicon.jpeg" alt="clockicon">
+                Lieferung ab 10:30 • 
+                <img class="iconpadding" src="img/basketicon.png" alt="basketicon">
+                min. 15,00€ •
+                <img src="img/bikeicon.jpeg" alt="bikeicon">
+                2,00€
+            </div>
+            <div class="menu-line">
+                <img src="img/searchicon.jpeg" alt="searchicon">
+               <p>Pizza</p>
+               <p>Pasta</p>
+               <p>Burger</p>
+               <p>Spezialitäten</p>
+               <p>Suppen</p>
+               <p>Vorspeisen</p>
+               <p>Nachspeisen</p>
+            </div>
+             <!--meals-->
+            <div id="meals" class="meal-area">
+            <div id="reBasket"></div>
+            </div>
+            
+        </div>
+      
+        <!--shopping-basket-->
+        <div id="shoppingbasket" class="shoppingbasket">
+            <div id="orderdItemsContainer" class="orderdItemsContainer"></div>
+            <div class="bottom" id="totalPrice"></div>
+
+        </div>
+
+        
+    </div>  
+    <div id="reBasket" class="reponsiveBasket">
+        
+    </div>
+
+    <footer>
+        <a href="#">Resturant anmelden</a>
+        <a href="#">Resturant empfehlen</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="#">AGB</a>
+        <a href="#">Datenschutz</a>
+    </footer>
+
+
+</body>
+</html>

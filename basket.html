@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warenkorb</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="basket.js"></script>
+    <script src="pay.js"></script>
+    <script src="render.js"></script>
+    <script src="responsiveBasket.js"></script>
+    <script src="responsiveBasketHtml.js"></script>
+    <script src="emptyBasket.js"></script>
+    <script src="emptyRespBasket.js"></script>
+
+</head>
+<body onload="renderResponsiveBasket()">
+    <div class="respBasketHead">
+        Warenkorb
+        <a href="index.html"><img src="img/crossicon.png" alt="cross"></a>
+    </div>
+    <div class="border"></div>
+    <div id="respBasket" class="respShoppingbasket"></div>
+    <div id="respPayArea"></div>
+    
+</body>
+</html>
